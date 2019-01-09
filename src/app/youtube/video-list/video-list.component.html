@@ -1,0 +1,15 @@
+<div class="card-container" [@listAnimation]="(videos)">
+  <mat-card class="card-sizing" *ngFor="let video of videos">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{video.title}}</mat-card-title>
+      <mat-card-subtitle>{{video.publishedAt | date }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{video.thumbnail}}">
+    <mat-card-content>
+      <p>
+        {{video.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

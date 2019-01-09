@@ -1,0 +1,13 @@
+.input-width{
+    width: 320px;
+}
+
+.icon-search:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 420px){
+    .input-width{
+        width: 280px;
+    }
+}

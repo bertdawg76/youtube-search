@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  {{title}}
+</mat-toolbar>
+<div class="container">
+  <app-search-input class="margin-top" (term)="youtubeSearchClicked($event)"></app-search-input>
+  <app-video-list [videos]="videos$ | async"></app-video-list>
+  <app-pagination></app-pagination>
+</div>
+
