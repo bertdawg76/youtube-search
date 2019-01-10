@@ -1,6 +1,6 @@
 <form>
   <mat-form-field class="input-width">
-    <input matInput placeholder="Search" [formControl]="searchTerm">
+    <input matInput placeholder="Search" [formControl]="searchTerm" (keydown.enter)="youtubeSearchClicked()">
     <mat-icon class="icon-search" matSuffix (click)="youtubeSearchClicked()">youtube_searched_for</mat-icon>
   </mat-form-field>
 </form>
