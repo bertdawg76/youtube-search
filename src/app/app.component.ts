@@ -9,7 +9,6 @@ import { debounceTime, switchMap, filter } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-    title = 'Angular Youtube Search';
     subs: Subscription[] = [];
     videos$: Observable<any>;
 
